@@ -16,10 +16,10 @@ function background_shading() {
         if ([red, green, blue] != [fred, fgreen, fgreen]) {
 
 
-            console.log(red+Math.round(y))
-            if (red+Math.round(y) != fred) {
+            console.log(red + Math.round(y))
+            if (red + Math.round(y) != fred) {
                 r = red + Math.round(y)
-            } 
+            }
 
             if (g != fgreen) {
                 g = green + Math.round(y)
@@ -34,10 +34,21 @@ function background_shading() {
     })
 }
 
+// create a new Image object
+
+// when preload is complete, apply the image to the div
+img_tag.onload = function () {
+
+    document.querySelector('#div').style.backgroundImage = 'url(' + img + ')';
+}
+
+// setting 'src' actually starts the preload
+img_tag.src = img;
+
 function background_shading2() {
     var scale = chroma.scale(['#181818', '#8a59bb']).domain([0, $(document).height()]);
     $(window).on('scroll', function () {
-        $('.scroll-container').css('background-color', scale(window.pageYOffset));   
+        $('.body-home').css('background-color', scale(window.pageYOffset));
         console.log("Bella li bro")
     });
 }
