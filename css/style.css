@@ -8,9 +8,10 @@ span {
 }
 
 .vel-title {
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-25%);
     position: absolute;
-    left: 35%;
-    transform: translateY(50%);
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -22,18 +23,20 @@ span {
 
 .philosophy-title {
     position: absolute;
-    left: 5%;
+    width: 100%;
+    text-align: center;
     transform: translateY(5%);
     font-size: 64px;
 }
 
 .philosophy-summary {
-    position: relative;
-    top: 15%;
+    position: absolute;
+    top: 20%;
     left: 5%;
+    margin-right: 200px;
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.05em;
     line-height: 25px;
     color: #FFFFFF;
 }
