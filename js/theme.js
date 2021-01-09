@@ -5,3 +5,8 @@ function background_shading2() {
         console.log("Bella li bro")
     });
 }
+
+function scroll_to_shop() {
+    var title = document.getElementById("slide-shop");
+    title.scrollIntoView({ behavior: 'smooth' });
+}
