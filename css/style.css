@@ -14,7 +14,7 @@ span {
     bottom: 0;
     left: 0;
     right: 0;
-    width: 50%;
+    width: 30%;
     height: 30%;
     margin: auto;
     font-family: 'Montserrat', sans-serif;
@@ -83,8 +83,8 @@ span {
     letter-spacing: 0.05em;
     line-height: 20px;
     color: #FFFFFF;
-    margin-left: 64px;
-    margin-right: 64px;
+    margin-left: 32px;
+    margin-right: 32px;
     margin-top: 32px;
 }
 
