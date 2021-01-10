@@ -9,10 +9,14 @@ span {
 
 
 .vel-title {
-    top: 25%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-25%);
     position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50%;
+    height: 30%;
+    margin: auto;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -39,6 +43,9 @@ span {
     letter-spacing: 0.05em;
     line-height: 20px;
     color: #FFFFFF;
+    margin-left: 64px;
+    margin-right: 64px;
+    margin-top: 32px;
 }
 
 .shop-title {
@@ -60,9 +67,35 @@ span {
 }
 
 .about-us-div {
-    display: block;
-    width: 50%;
+    display: initial;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.05em;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-left: 64px;
 }
+
+.about-us-summary {
+    display: block;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.05em;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-left: 64px;
+    margin-right: 64px;
+    margin-top: 32px;
+}
+
+.contact-image {
+    color: white;
+}
+
+.contact-text {
+    font-size: 16px;
+}
+
 
 #slide-shop {
 
