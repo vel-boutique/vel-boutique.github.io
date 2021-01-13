@@ -2,21 +2,20 @@ span {
     color: #ffffff;
 }
 
+
 .scroll-view-1 {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
     height: 100vh;
+}
+
+.filler {
+    flex: 1;
 }
 
 
 .vel-title {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 30%;
-    height: 30%;
-    margin: auto;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -28,8 +27,6 @@ span {
 }
 
 .philosophy-title {
-    width: 100%;
-    display: inline-block;
     vertical-align: top;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -37,7 +34,6 @@ span {
 }
 
 .philosophy-summary {
-    display: block;
     font-size: 1em;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.05em;
@@ -49,7 +45,6 @@ span {
 }
 
 .shop-title {
-    width: 100%;
     display: inline-block;
     vertical-align: top;
     text-align: center;
@@ -58,7 +53,6 @@ span {
 }
 
 .about-us-title {
-    width: 100%;
     display: inline-block;
     vertical-align: top;
     text-align: center;
@@ -67,7 +61,6 @@ span {
 }
 
 .about-us-div {
-    display: initial;
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.05em;
@@ -77,15 +70,14 @@ span {
 }
 
 .about-us-summary {
-    display: block;
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.05em;
     line-height: 20px;
     color: #FFFFFF;
-    margin-left: 32px;
-    margin-right: 32px;
-    margin-top: 32px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 16px;
 }
 
 .contact-image {

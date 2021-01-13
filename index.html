@@ -1,73 +1,85 @@
 <!DOCTYPE html>
 
 <head>
-    <meta content='width=device-width, initial-scale=1' name='viewport'/>
-    <meta name="theme-color" content="#000000">
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/chroma.js"></script>
-    <script type="text/javascript" src="js/theme.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+  <meta content='width=device-width, initial-scale=1' name='viewport' />
+  <meta name="theme-color" content="#000000">
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/chroma.js"></script>
+  <script type="text/javascript" src="js/theme.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
 
-    <script> $(document).ready(function() {
-        $(".vel-title").on('click', function(event) {
-            console.log("test")
-      
-          if (this.hash !== "") {
-            event.preventDefault();
-            var hash = this.hash;
-      
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-            $('html, body').animate({
-              scrollTop: $(hash).offset().top
-            }, 800, function(){
-      
-              window.location.hash = hash;
-            });
-          } 
-        });
-      });</script>
+  <script> $(document).ready(function () {
+      $(".vel-title").on('click', function (event) {
+        console.log("test")
 
-      <title>V E L</title>
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function () {
+
+            window.location.hash = hash;
+          });
+        }
+      });
+    });</script>
+
+  <title>V E L</title>
 
 </head>
 
 <html>
 
 <body onscroll="background_shading2()" style="background:#000000" class="body-home">
-    <div class="scroll-container">
-        <div class="scroll-view-1 " id="slide-1">
-            <div class="scroll-view-1 "><a class="vel-title" href="#slide-shop">VEL</a></div>
-            <div class="scroll-view-1 " id="slide-shop">
-                <span class="shop-title">Shop</span>
-            </div>
-            <div class="scroll-view-1 " id="slide-3 ">
-                <span class="philosophy-title">Philosophy</span>
-                <span class="philosophy-summary">
-                    Vel is not for everyone. <br>
-                    Vel is not a brand, is something different. Because you are something different. Vel exists for that people who are “the round pegs in the square holes”  and for “the ones who see things differently”. <br>
-                    Vel is something different because is the possibility to express yourself, and the choice to make it.<br>
-                    And this is what the symbol ∨ means. <br>
-                    <br>
-                    Vel makes it different, but there are some things that are important for everyone. <br>
-                    <br>
-                    Privacy <br>
-                    Privacy is important, so Vel gives you the possibility to do not share your personal information. For this reason we do not use any type of cookies on our website. Furthermore, you’ll never be asked to sing up for a newsletter or for any operation you make on our site. <br>
-                    <br>
-                    Plastic free <br>
-                    For the human beings, the environment is the most important thing, so we chose to respect it: for this reason our packaging and our production are 100% plastic free.<br>
-                </span>
-            </div>
-            <div class="scroll-view-1" id="slide-about-us">
-                <span class="about-us-title">About us </span>
-                <span class="about-us-summary">Est. 2021</span>
-                <div class="about-us-div"><img class="contact-image" title="Instagram" src="https://img.icons8.com/ios/24/000000/instagram-new--v1.png"/><a class="contact-text"><strong>Instagram</strong></a>
-               <img class="contact-image" title="Email" src="https://img.icons8.com/ios/24/000000/filled-message.png"/><a class="contact-text"><strong>Email</strong><strong</a></div>
-            </div>
-
-        </div>
+  <div class="scroll-container">
+    <div class="scroll-view-title"></div>
+    <div class="scroll-view-1" id="slide-1">
+      <a class="vel-title" href="#slide-shop">VEL</a>
     </div>
+    <div class="scroll-view-1 " id="slide-shop">
+      <span class="shop-title">Shop</span>
+      <div class="filler"></div>
+    </div>
+    <div class="scroll-view-1 " id="slide-3 ">
+      <span class="philosophy-title">Philosophy</span>
+      <span class="philosophy-summary">
+        "Vel is not for everyone. <br>
+        Vel is not a brand, is something different. Because you are something different. Vel exists for that people who
+        are “the round pegs in the square holes” and for “the ones who see things differently”. <br>
+        Vel is something different because is the possibility to express yourself, and the choice to make it.<br>
+        And this is what the symbol ∨ means. <br>
+        <br>
+        <br>
+        Privacy <br>
+        Privacy is important, so Vel gives you the possibility to do not share your personal information. For this
+        reason we do not use any type of cookies on our website. Furthermore, you’ll never be asked to sing up for a
+        newsletter or for any operation you make on our site. <br>
+        <br>
+        Plastic free <br>
+        For the human beings, the environment is the most important thing, so we chose to respect it: for this reason
+        our packaging and our production are 100% plastic free."<br>
+      </span>
+      <div class="filler"></div>
+    </div>
+    <div class="scroll-view-1" id="slide-about-us">
+      <span class="about-us-title">About us </span>
+      <span class="about-us-summary">Est. 2021</span>
+      <div class="about-us-div"><img class="contact-image" title="Instagram"
+          src="https://img.icons8.com/ios/24/000000/instagram-new--v1.png" /><a
+          class="contact-text"><strong>Instagram</strong></a>
+        <img class="contact-image" title="Email" src="https://img.icons8.com/ios/24/000000/filled-message.png" /><a
+          class="contact-text"><strong>Email</strong>
+          <strong< /a>
+      </div>
+    </div>
+    <div class="filler"></div>
+  </div>
+  </div>
 </body>
 
 </html>
