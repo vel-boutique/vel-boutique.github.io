@@ -6,5 +6,5 @@ $msg = "";
 $msg = wordwrap($msg,70);
 
 // send email
-mail("vel.boutique.clothing@gmail.com","New Order",$msg);
+mail("vel@vel.boutique","New Order",$msg);
 ?>
