@@ -12,6 +12,64 @@
     font-weight: normal;
     text-align: center;
     font-size: 108px;
-    letter-spacing: 0.5em;
     text-decoration: none;
+}
+
+#V {
+	opacity: 1;
+	animation: flickerV 2.5s linear  reverse infinite;
+}
+
+/**#V::after {
+	content: '';
+	width: 100%;
+	-webkit-box-shadow: -20px 0px 70px 8px rgba(255,255,255,1);
+	-moz-box-shadow: -20px 0px 70px 8px rgba(255,255,255,1);
+	box-shadow: -20px 0px 70px 8px rgba(255,255,255,1);
+}**/
+
+
+@keyframes flickerV {
+	0% {
+		opacity: 0.4;
+	}
+	5% {
+		opacity: 0.5;
+	}
+	10% {
+		opacity: 0.6;
+	}
+	15% {
+		opacity: 0.85;
+	}
+	25% {
+		opacity: 0.5;
+	}
+	30% {
+		opacity: 1;
+	}
+	35% {
+		opacity: 0.1;
+	}
+	40% {
+		opacity: 0.25;
+	}
+	45% {
+		opacity: 0.5;
+	}
+	60% {
+		opacity: 1;
+	}
+	70% {
+		opacity: 0.85;
+	}
+	80% {
+		opacity: 0.4;
+	}
+	90% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 1;
+	}
 }

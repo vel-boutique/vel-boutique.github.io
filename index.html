@@ -40,6 +40,10 @@
         }
       });
     });
+
+    $(function () {
+      $(document).tooltip();
+    });
   </script>
 
   <!-- Page content -->
@@ -47,7 +51,7 @@
 
     <!-- main -->
     <div class="w3-container w3-content w3-center" style="height:650px;" id="main">
-      <p class="w3-center vel-title-style vel-text-style" style="color: #FFFFFF;" href="#shop">V</p>
+      <p class="vel-title-style" id="V" style="color: #FFFFFF;" href="#shop">V</p>
       <!--<p class="sw3-opacity" style="color: #FFFFFF;"><i>slogan</i></p>-->
     </div>
 
@@ -132,7 +136,6 @@
         <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="about-us">
           <p class="w3-wide w3-center vel-text-style" style="color: #FFFFFF;">About us</p>
           <div style="padding-top: 5%;">
-            <p class="w3-medium w3-center" style="color: #FFFFFF;"><i>We're here to innovate, just let us do it</i></p>
             <p class="w3-medium w3-center" style="color: #FFFFFF"><i>Est. 2021</i></p>
           </div>
           <!--<div class="w3-row w3-padding-32">
@@ -163,10 +166,9 @@
 
       <!-- Footer -->
       <footer class="w3-container w3-padding-32 w3-center w3-opacity w3-xlarge">
-        <a href="https://www.instagram.com/vel.boutique" style="padding: 10px;"><img src="imgs/instagram-ico.png"
-            style="width: 24px; height: 24px;"></img></a><!--<a href="https://www.instagram.com/vel.boutique"
-          style="padding: 10px;"><img src="imgs/business-ico.png" style="width: 24px; height: 24px;"></img>--></a>
-        <a href="https://www.instagram.com/vel.boutique" style="padding: 10px;"><img src="imgs/email-ico.png"
+        <a title="Instagram" href="https://www.instagram.com/vel.boutique" style="padding: 10px;"><img src="imgs/instagram-ico.png"
+            style="width: 24px; height: 24px;"></img></a>
+        <a title="Email" href="https://www.instagram.com/vel.boutique" style="padding: 10px;"><img src="imgs/email-ico.png"
             style="width: 24px; height: 24px;"></img></a>
       </footer>
 
