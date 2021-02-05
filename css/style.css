@@ -11,13 +11,13 @@
     font-style: normal;
     font-weight: normal;
     text-align: center;
-    font-size: 108px;
+    font-size: 150px;
     text-decoration: none;
 }
 
 #V {
 	opacity: 1;
-	animation: flickerV 2.5s linear  reverse infinite;
+	animation: flickerV 2.5s linear;
 }
 
 /**#V::after {
