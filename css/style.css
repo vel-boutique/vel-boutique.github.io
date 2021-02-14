@@ -20,13 +20,11 @@
 	animation: flickerV 2.5s linear;
 }
 
-/**#V::after {
+#V::after {
 	content: '';
 	width: 100%;
-	-webkit-box-shadow: -20px 0px 70px 8px rgba(255,255,255,1);
-	-moz-box-shadow: -20px 0px 70px 8px rgba(255,255,255,1);
-	box-shadow: -20px 0px 70px 8px rgba(255,255,255,1);
-}**/
+	box-shadow: -50px 0px 128px 10px rgba(255,255,255,0.8);
+}
 
 @keyframes flickerV {
 	0% {
