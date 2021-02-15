@@ -2,6 +2,14 @@ p {
 	color: #fff;
 }
 
+.vel-title-style {
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    font-size: 150px;
+    text-decoration: none;
+}
+
 .vel-text-style {
     font-style: normal;
     font-weight: normal;
@@ -11,17 +19,19 @@ p {
     text-decoration: none;
 }
 
-.vel-title-style {
-    font-style: normal;
-    font-weight: normal;
-    text-align: center;
-    font-size: 150px;
-    text-decoration: none;
-}
-
 .shop-box {
 	margin-right: 32px;
 	margin-left: 32px;
+}
+
+.text-footer {
+	font-size: 14px;
+	padding: 14px;
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
 }
 
 /**

@@ -11,11 +11,13 @@
 <script type="text/javascript" src="js/chroma.js"></script>
 <script type="text/javascript" src="js/theme.js"></script>
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
 
 <style>
+   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+
   body {
     font-family: "Montserrat", sans-serif;
+    font-weight: 100;
   }
 </style>
 
@@ -55,7 +57,7 @@
       <!--<p class="sw3-opacity" style="color: #FFFFFF;"><i>slogan</i></p>-->
     </div>
 
-    <div class="w3-container w3-content w3" id="philosophy">
+    <div class="w3-container w3-content" style="max-width: 800px;" id="philosophy">
       <p class="w3-wide vel-title w3-center vel-text-style" style="color: #FFFFFF; top: 50%;">Philosophy</p>
       <p class="w3-opacity" style="color: #FFFFFF;">
         <i>"Vel is not for everyone. <br>
@@ -79,7 +81,7 @@
     <div id="shop">
       <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
         <p class="w3-wide w3-center vel-text-style" style="color: #FFFFFF;">Shop</p>
-       
+
         <p class="w3-center" style="color: #FFFFFF;"><i>Coming soon...</i></p>
 
         <!--<div class="w3-row-padding w3-padding-32" style="margin:0 -16px;">
@@ -90,85 +92,37 @@
       </div>
     </div>
 
-        <!-- Buying Section -->
-        <!--<div id="buyItem" class="w3-modal">
-          <div class="w3-modal-content w3-animate-top w3-card-4">
-            <header class="w3-container w3-black w3-center w3-padding-32">
-              <span onclick="document.getElementById('buyItem').style.display='none'"
-                class="w3-button w3-black w3-xlarge w3-display-topright">&times;</span>
-              <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Shirts</h2>
-            </header>
-            <div class="w3-container">
-              <p><label><i class="fa fa-shopping-cart"></i>text text text</label></p>
-              <input class="w3-input w3-border" type="text" placeholder="How many?">
-              <p><label><i class="fa fa-user"></i>booo</label></p>
-              <input class="w3-input w3-border" type="text" placeholder="Enter email">
-              <button class="w3-button w3-block w3-black w3-padding-16 w3-section w3-right">PAY <i
-                  class="fa fa-check"></i></button>
-              <button class="w3-button  w3-white w3-section"
-                onclick="document.getElementById('buyItem').style.display='none'">Close <i
-                  class="fa fa-remove"></i></button>
-              <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
-            </div>
-          </div>
-        </div>-->
-
-        <!-- The Contact Section -->
-        <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="about-us">
-          <p class="w3-wide w3-center vel-text-style" style="color: #FFFFFF;">About us</p>
-          <p class="w3-opacity" style="color: #FFFFFF;"><i>
-              ∨ Designed and handcrafted in Italy<br>
-              <br>
-              ∨ Production and Packaging 100% plastic free <br>
-              <br>
-              ∨ No cookies, No subscription, No data collected
-            </i></p>
-          <div style="padding-top: 5%;">
-            <p class="w3-medium w3-center" style="color: #FFFFFF"><i>Est. 2021</i></p>
-          </div>
-          <!--<div class="w3-row w3-padding-32">
-      <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+    <!-- The Contact Section -->
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="about-us">
+      <p class="w3-wide w3-center vel-text-style" style="color: #FFFFFF;">About us</p>
+      <p class="w3-opacity" style="color: #FFFFFF;"><i>
+          ∨ Designed and handcrafted in Italy<br>
+          <br>
+          ∨ Production and Packaging 100% plastic free <br>
+          <br>
+          ∨ No cookies, No subscription, No data collected
+        </i></p>
+      <div style="padding-top: 5%;">
+        <p class="w3-medium w3-center" style="color: #FFFFFF"><i>Est. 2021</i></p>
       </div>
-      <div class="w3-col m6">
-        <form action="/action_page.php" target="_blank">
-          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-            </div>
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-            </div>
-          </div>
-          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
-        </form>
-      </div>
-    </div>-->
-        </div>
+      <!-- End Page Content -->
+    </div>
 
-        <!-- End Page Content -->
-      </div>
+    <hr style="margin-left: 20%; margin-right: 20%; text-align: center; color: #fff;">
 
-      <!-- Footer -->
-      <footer class="w3-container w3-padding-32 w3-center w3-opacity w3-xlarge">
-        <a class="w3-hover-opacity" title="Instagram" href="https://www.instagram.com/vel.boutique" style="padding: 10px;"><img
-            src="imgs/instagram-ico.png" style="width: 24px; height: 24px;"></img></a>
-        <a class="w3-hover-opacity" title="Email" href="mailto:vel@vel.boutique" style="padding: 10px;"><img
-            src="imgs/email-ico.png" style="width: 24px; height: 24px;"></img></a>
-      </footer>
-
-      <script>
-        // When the user clicks anywhere outside of the modal, close it
-        var modal = document.getElementById('buyItem');
-        window.onclick = function (event) {
-          if (event.target == modal) {
-            modal.style.display = "none";
-          }
-        }
-      </script>
+    <!-- Footer -->
+    <footer style="display: flex; justify-content: center;" class="w3-container w3-padding-32 w3-center">
+      <p class="text-footer"><a class="w3-hover-opacity" title="Instagram"
+          href="https://www.instagram.com/vel.boutique">
+          <!--<img src="imgs/instagram-ico.png" style="width: 24px; height: 24px;"></img>-->Instagram
+        </a></p>
+      <p class="text-footer"><a class="w3-hover-opacity" title="Email" href="mailto:vel@vel.boutique">
+          <!--<img src="imgs/email-ico.png" style="width: 24px; height: 24px;"></img>-->Contact
+        </a></p>
+      <p class="text-footer"><a class="w3-hover-opacity" title="Business" href="mailto:vel@vel.boutique">Business</a>
+      </p>
+      <p class="text-footer w3-hover-opacity">© 2021</p>
+    </footer>
 </body>
 
 </html>
