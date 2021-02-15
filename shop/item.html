@@ -27,7 +27,7 @@
 <body>
     <div class="top-nav">
         <div style="width: 50%;">
-            <h1 title="V e l" class="w3-wide w3-hover-opacity">V E L</h1>
+            <h1 id="title-nav" title="V e l" class="w3-wide w3-hover-opacity">V E L</h1>
         </div>
 
         <div style="display: inline; width: 50%;">
@@ -50,7 +50,7 @@
             <div style="margin-bottom: 16px;">
             <button id="button-size"class="size" style="display: inline;">Select your size</button>
             </div>
-            <button id="button-add" title="to the shopping bag" style="display: inline;" class="w3-hover-opacity">Add</button>
+            <button id="button-add" title="the shopping bag is in the upper part right" style="display: inline;" class="w3-hover-opacity">Add to cart</button>
             <button id="button-buynow" title="right now" style="display: inline;" class="w3-hover-opacity">Buy now</button>
             <p>70 euros</p>
     </div>
@@ -70,3 +70,9 @@
 </body>
 
 </html>
+
+<script>
+    document.getElementById("title-nav").onclick = function () {
+        location.href = "https://vel.boutique";
+    };
+</script>

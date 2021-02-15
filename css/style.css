@@ -1,5 +1,11 @@
 p {
 	color: #fff;
+	font-weight: 100;
+
+}
+
+h1 {
+
 }
 
 .vel-title-style {
@@ -7,6 +13,7 @@ p {
     font-weight: normal;
     text-align: center;
     font-size: 150px;
+	font-weight: 100;
     text-decoration: none;
 }
 
@@ -15,6 +22,7 @@ p {
     font-weight: normal;
     text-align: center;
     font-size: 48px;
+	font-weight: 100;
     letter-spacing: 0.25em;
     text-decoration: none;
 }
