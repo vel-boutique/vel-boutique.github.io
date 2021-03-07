@@ -139,15 +139,12 @@ a {
 .in-evidence {
 	margin: 5%;
 	height: 450px;
-	overflow-x: scroll;
-	overflow-y: hidden;
-	white-space: nowrap;
-	padding: 16px;
 }
 
 .in-evidence img {
 	width: 300px;
 	height: 300px;
+	cursor: pointer;
 }
 
 .shop-item {
@@ -162,22 +159,14 @@ a {
 	font-size: 24px;
 	text-align: center;
 	color: #fff;
+	cursor: pointer;
 }
 
-::-webkit-scrollbar {
-	height: 3px;
-	/* height of horizontal scrollbar ← You're missing this */
-	/* border: 1px solid #fff; */
-	background-color: rgba(0, 0, 0, 0.2);
-}
-
-::-webkit-scrollbar-thumb:horizontal {
-	/*border: 1px solid #fff;*/
-	background-color: #c4c4c4;
-	border-radius: 10px;
-}
-
-::-webkit-scrollbar-track {
-    border-radius: 10px;
-    background-color: #ffffff;
-}
+.dot {
+	height: 18px;
+	width: 18px;
+	border-radius: 50%;
+	display: inline-block;
+	margin: 2%;
+	cursor: pointer;
+  }
