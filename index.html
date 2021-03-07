@@ -32,6 +32,15 @@
     $(function () {
       $(document).tooltip();
     });
+
+    function changeItemImage() {
+      if (document.getElementById("item-la-prima").src == "/imgs/la_prima1.png") {
+        document.getElementById("item-la-prima").src = "/imgs/la_prima3.png";
+      }
+      else {
+        document.getElementById("item-la-prima").src = "/imgs/la_prima1.png";
+      }
+    }
   </script>
 
   <!-- Page content -->
@@ -72,45 +81,45 @@
 
         <div class="w3-center in-evidence">
           <div class="shop-item">
-            <img class="w3-hover-opacity" title="La prima" src="imgs/la_prima1.png">
+            <img id="item-la-prima" class="w3-hover-opacity" title="La Prima" src="imgs/la_prima1.png">
             <p class="in-evidence-item-title w3-hover-opacity">La prima</p>
-            <span class="dot w3-hover-opacity" style="background-color: #fff;"></span>
-            <span class="dot w3-hover-opacity" style="background-color: #000;"></span>
+            <span onclick="changeItemImage()" id="item-white" class="dot w3-hover-opacity" style="background-color: #fff;"></span>
+            <span onclick="changeItemImage()" id="item-black" class="dot w3-hover-opacity" style="background-color: #000;"></span>
           </div>
+        </div>
       </div>
-    </div>
 
-    <!-- The Contact Section -->
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="about-us">
-      <p class="w3-wide w3-center vel-text-style" style="color: #FFFFFF;">About us</p>
-      <p class="w3-opacity" style="color: #FFFFFF;"><i>
-          ∨ Designed and handcrafted in Italy<br>
-          <br>
-          ∨ Production and Packaging 100% plastic free <br>
-          <br>
-          ∨ No cookies, No subscription, No data collected
-        </i></p>
-      <div style="padding-top: 5%;">
-        <p class="w3-medium w3-center" style="color: #FFFFFF"><i>Est. 2021</i></p>
+      <!-- The Contact Section -->
+      <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="about-us">
+        <p class="w3-wide w3-center vel-text-style" style="color: #FFFFFF;">About us</p>
+        <p class="w3-opacity" style="color: #FFFFFF;"><i>
+            ∨ Designed and handcrafted in Italy<br>
+            <br>
+            ∨ Production and Packaging 100% plastic free <br>
+            <br>
+            ∨ No cookies, No subscription, No data collected
+          </i></p>
+        <div style="padding-top: 5%;">
+          <p class="w3-medium w3-center" style="color: #FFFFFF"><i>Est. 2021</i></p>
+        </div>
+        <!-- End Page Content -->
       </div>
-      <!-- End Page Content -->
-    </div>
 
-    <!--<hr style="margin-left: 20%; margin-right: 20%; text-align: center; color: #fff;">-->
+      <!--<hr style="margin-left: 20%; margin-right: 20%; text-align: center; color: #fff;">-->
 
-    <!-- Footer -->
-    <footer style="display: flex; justify-content: center;" class="w3-container w3-padding-32 w3-center">
-      <p class="text-footer"><a class="w3-hover-opacity" title="Instagram"
-          href="https://www.instagram.com/vel.boutique">
-          <!--<img src="imgs/instagram-ico.png" style="width: 24px; height: 24px;"></img>-->Instagram
-        </a></p>
-      <p class="text-footer"><a class="w3-hover-opacity" title="Email" href="mailto:vel@vel.boutique">
-          <!--<img src="imgs/email-ico.png" style="width: 24px; height: 24px;"></img>-->Contact
-        </a></p>
-      <p class="text-footer"><a class="w3-hover-opacity" title="Business" href="mailto:vel@vel.boutique">Business</a>
-      </p>
-      <p class="text-footer w3-hover-opacity" href="https://vel.boutique/vel.html">© 2021</p>
-    </footer>
+      <!-- Footer -->
+      <footer style="display: flex; justify-content: center;" class="w3-container w3-padding-32 w3-center">
+        <p class="text-footer"><a class="w3-hover-opacity" title="Instagram"
+            href="https://www.instagram.com/vel.boutique">
+            <!--<img src="imgs/instagram-ico.png" style="width: 24px; height: 24px;"></img>-->Instagram
+          </a></p>
+        <p class="text-footer"><a class="w3-hover-opacity" title="Email" href="mailto:vel@vel.boutique">
+            <!--<img src="imgs/email-ico.png" style="width: 24px; height: 24px;"></img>-->Contact
+          </a></p>
+        <p class="text-footer"><a class="w3-hover-opacity" title="Business" href="mailto:vel@vel.boutique">Business</a>
+        </p>
+        <p class="text-footer w3-hover-opacity" href="https://vel.boutique/vel.html">© 2021</p>
+      </footer>
 </body>
 
 </html>
