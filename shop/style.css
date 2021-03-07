@@ -1,87 +1,116 @@
 .top-nav {
-    background-color: #000;
-    overflow: hidden;
-    max-height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: #000;
+  overflow: hidden;
+  max-height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
 }
 
 .top-nav h1 {
-    color: #fff;
-    font-family: "Montserrat", sans-serif;
-    cursor: pointer;
-    margin-left: 16px;
-    font-weight: 100;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  margin-left: 16px;
+  font-weight: 100;
+  font-size: 48px;
 }
 
 .top-nav img {
-    height: 100px;
-    width: 100px;
-    float: right;
-    padding: 16px;
-    cursor: pointer;
+  height: 100px;
+  width: 100px;
+  float: right;
+  padding: 16px;
+  cursor: pointer;
 }
 
 .text-footer {
-    font-size: 14px;
-    padding: 14px;
-    cursor: pointer;
+  font-size: 14px;
+  padding: 14px;
+  cursor: pointer;
 }
 
 .price {
-    font-size: 20px;
-    text-align: center;
+  font-size: 20px;
+  text-align: center;
 }
 
 h2 {
-    text-align: center;
-    font-size: 64px;
-    font-family: "Montserrat", sans-serif;
-    color: #fff;
-    font-weight: 300;
-    padding: 16px;
+  text-align: center;
+  font-size: 64px;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-weight: 300;
+  padding: 16px;
 }
 
 h3 {
-    text-align: center;
-    font-size: 16px;
-    font-family: "Montserrat", sans-serif;
-    color: #fff;
-    font-weight: 100;
-    padding: 8px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-weight: 100;
+  padding: 8px;
 }
 
 p {
-    color: #fff;
+  color: #fff;
 }
 
 img {
-    width: 300px;
-    height: 300px;
-    
+  width: 400px;
+  height: 400px;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 button {
-    border: 1px solid #fff;
-    background-color: rgb(256, 256, 256, 0);
-    cursor: pointer;
-    min-width: 15%;
-    color: #fff;
-    padding: 8px;
-    margin: 2px;
+  border: 1px solid #fff;
+  background-color: rgb(256, 256, 256, 0);
+  cursor: pointer;
+  min-width: 15%;
+  color: #fff;
+  padding: 8px;
+  margin: 2px;
 }
 
 .size {
-    background-color: rgb(256, 256, 256, 0);
-    cursor: pointer;
-    color: #fff;
-    padding: 8px;
-    border: none;
-    min-width: 30%;
-    margin: 8px;
+  background-color: rgb(256, 256, 256, 0);
+  cursor: pointer;
+  color: #fff;
+  padding: 8px;
+  border: none;
+  min-width: 30%;
+  margin: 8px;
+}
+
+.gallery {
+  margin: 5%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+
+.image-slide {
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+}
+
+::-webkit-scrollbar {
+  height: 10px;
+  /* height of horizontal scrollbar ← You're missing this */
+  width: 4px;
+  /* width of vertical scrollbar */
+  /* border: 1px solid #fff; */
+}
+
+::-webkit-scrollbar-thumb:horizontal{
+  /*border: 1px solid #fff;*/
+  background-color: #121212;
+  border-radius: 10px;
 }

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>V E L ∨ Shop</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#000000">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="../js/chroma.js"></script>
+<script type="text/javascript" src="../js/theme.js"></script>
+<script type="text/javascript" src="../js/db.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    body {
+        background-color: #000;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 100;
+    }
+</style>
+
+<html>
+
+<body>
+    <div class="top-nav">
+        <div>
+            <h1 id="title-nav" title="V e l" class="w3-wide w3-hover-opacity">V E L</h1>
+        </div>
+
+        <!--<div style="display: inline; width: 50%;">
+            <img title="shopping cart" class="w3-hover-opacity" src="../imgs/shop-ico.svg">
+        </div>-->
+    </div>
+
+    <div class="gallery" ></a>
+        <ul>
+            <img class="image-slide" src="../imgs/la_prima1.png">
+            <img class="image-slide" src="../imgs/la_prima4.png">
+            <img class="image-slide" src="../imgs/la_prima3.png">
+            <img class="image-slide" src="../imgs/la_prima2.png">
+        </ul>
+    </div>
+
+
+
+    <h2>La Prima</h2>
+
+    <h3><i>Je suis</i></h3>
+
+    <div style="margin-bottom: 16px;">
+        <button id="button-size" class="size" style="display: inline;">Select your size</button>
+    </div>
+    <!--<button id="button-add" title="the shopping bag is in the upper part right" style="display: inline;"
+            class="w3-hover-opacity">Add to cart</button>
+        <button id="button-buynow" title="right now" style="display: inline;" class="w3-hover-opacity">Buy now</button>
+        <p>70 euros</p>-->
+
+    <div id='product-component-1613768177855'></div>
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        (function () {
+            var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+            if (window.ShopifyBuy) {
+                if (window.ShopifyBuy.UI) {
+                    ShopifyBuyInit();
+                } else {
+                    loadScript();
+                }
+            } else {
+                loadScript();
+            }
+            function loadScript() {
+                var script = document.createElement('script');
+                script.async = true;
+                script.src = scriptURL;
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                script.onload = ShopifyBuyInit;
+            }
+            function ShopifyBuyInit() {
+                var client = ShopifyBuy.buildClient({
+                    domain: 'vel-shop-vel.myshopify.com',
+                    storefrontAccessToken: '27194afb7a0ebc50d120105583a18fbd',
+                });
+                ShopifyBuy.UI.onReady(client).then(function (ui) {
+                    ui.createComponent('product', {
+                        id: '6161998053530',
+                        node: document.getElementById('product-component-1613768177855'),
+                        moneyFormat: '%E2%82%AC%7B%7Bamount_with_comma_separator%7D%7D',
+                        options: {
+                            "product": {
+                                "styles": {
+                                    "product": {
+                                        "@media (min-width: 601px)": {
+                                            "max-width": "calc(25% - 20px)",
+                                            "margin-left": "20px",
+                                            "margin-bottom": "50px"
+                                        }
+                                    },
+                                    "title": {
+                                        "font-family": "Montserrat, sans-serif",
+                                        "font-weight": "normal",
+                                        "color": "#ffffff",
+                                        "display": "none"
+                                    },
+                                    "button": {
+                                        "font-family": "Montserrat, sans-serif",
+                                        "font-size": "14px",
+                                        "padding-top": "15px",
+                                        "padding-bottom": "15px",
+                                        "border": "2px solid #fff",
+                                        ":hover": {
+                                            "background-color": "#000000"
+                                        },
+                                        "background-color": "#000000",
+                                        ":focus": {
+                                            "background-color": "#000000"
+                                        },
+                                        "border-radius": "2px",
+                                        "padding-left": "24px",
+                                        "padding-right": "24px"
+                                    },
+                                    "quantityInput": {
+                                        "font-size": "14px",
+                                        "padding-top": "15px",
+                                        "padding-bottom": "15px",
+                                        "display": "none"
+                                    },
+                                    "price": {
+                                        "font-family": "Montserrat, sans-serif",
+                                        "color": "#ffffff",
+                                        "display": "none"
+                                    },
+                                    "compareAt": {
+                                        "font-family": "Montserrat, sans-serif",
+                                        "color": "#ffffff"
+                                    },
+                                    "unitPrice": {
+                                        "font-family": "Montserrat, sans-serif",
+                                        "color": "#ffffff"
+                                    }
+                                },
+                                "contents": {
+                                    "button": false,
+                                    "buttonWithQuantity": true
+                                },
+                                "text": {
+                                    "button": "Add to cart"
+                                },
+                                "googleFonts": [
+                                    "Montserrat"
+                                ]
+                            },
+                            "productSet": {
+                                "styles": {
+                                    "products": {
+                                        "@media (min-width: 601px)": {
+                                            "margin-left": "-20px"
+                                        }
+                                    }
+                                }
+                            },
+                            "modalProduct": {
+                                "contents": {
+                                    "img": false,
+                                    "imgWithCarousel": true,
+                                    "button": false,
+                                    "buttonWithQuantity": true
+                                },
+                                "styles": {
+                                    "product": {
+                                        "@media (min-width: 601px)": {
+                                            "max-width": "100%",
+                                            "margin-left": "0px",
+                                            "margin-bottom": "0px"
+                                        }
+                                    },
+                                    "button": {
+                                        "font-family": "Montserrat, sans-serif",
+                                        "font-size": "14px",
+                                        "padding-top": "15px",
+                                        "padding-bottom": "15px",
+                                        "font-weight": "100",
+                                        ":hover": {
+                                            "background-color": "#000000"
+                                        },
+                                        "background-color": "#000000",
+                                        ":focus": {
+                                            "background-color": "#000000"
+                                        },
+                                        "border-radius": "2px",
+                                        "padding-left": "24px",
+                                        "padding-right": "24px"
+                                    },
+                                    "quantityInput": {
+                                        "font-size": "14px",
+                                        "padding-top": "15px",
+                                        "padding-bottom": "15px"
+                                    }
+                                },
+                                "googleFonts": [
+                                    "Montserrat"
+                                ],
+                                "text": {
+                                    "button": "Add to cart"
+                                }
+                            },
+                            "option": {
+                                "styles": {
+                                    "label": {
+                                        "font-family": "Montserrat, sans-serif"
+                                    },
+                                    "select": {
+                                        "font-family": "Montserrat, sans-serif"
+                                    }
+                                },
+                                "googleFonts": [
+                                    "Montserrat"
+                                ]
+                            },
+                            "cart": {
+                                "styles": {
+                                    "button": {
+                                        "font-family": "Montserrat, sans-serif",
+                                        "font-size": "14px",
+                                        "padding-top": "15px",
+                                        "padding-bottom": "15px",
+                                        ":hover": {
+                                            "background-color": "#000000"
+                                        },
+                                        "background-color": "#000000",
+                                        ":focus": {
+                                            "background-color": "#000000"
+                                        },
+                                        "border-radius": "2px"
+                                    }
+                                },
+                                "text": {
+                                    "total": "Subtotal",
+                                    "button": "Checkout"
+                                },
+                                "popup": false,
+                                "googleFonts": [
+                                    "Montserrat"
+                                ]
+                            },
+                            "toggle": {
+                                "styles": {
+                                    "toggle": {
+                                        "font-family": "Montserrat, sans-serif",
+                                        "background-color": "#000000",
+                                        ":hover": {
+                                            "background-color": "#000000"
+                                        },
+                                        ":focus": {
+                                            "background-color": "#000000"
+                                        }
+                                    },
+                                    "count": {
+                                        "font-size": "14px"
+                                    }
+                                },
+                                "googleFonts": [
+                                    "Montserrat"
+                                ]
+                            }
+                        },
+                    });
+                });
+            }
+        })();
+/*]]>*/
+    </script>
+    </div>
+
+
+    <footer style="display: flex; justify-content: center;" class="w3-container w3-padding-32 w3-center">
+        <p class="text-footer"><a class="w3-hover-opacity" title="Instagram"
+                href="https://www.instagram.com/vel.boutique">
+                <!--<img src="imgs/instagram-ico.png" style="width: 24px; height: 24px;"></img>-->Instagram
+            </a></p>
+        <p class="text-footer"><a class="w3-hover-opacity" title="Email" href="mailto:vel@vel.boutique">
+                <!--<img src="imgs/email-ico.png" style="width: 24px; height: 24px;"></img>-->Contact
+            </a></p>
+        <p class="text-footer"><a class="w3-hover-opacity" title="Business" href="mailto:vel@vel.boutique">Business</a>
+        </p>
+        <p title="copyright" class="text-footer w3-hover-opacity">© 2021</p>
+    </footer>
+</body>
+
+</html>
+
+<script>
+    document.getElementById("title-nav").onclick = function () {
+        location.href = "https://vel.boutique";
+    };
+</script>
