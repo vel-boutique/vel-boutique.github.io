@@ -115,3 +115,12 @@ button {
   background-color: #333;
   border-radius: 10px;
 }
+
+.dot {
+	height: 18px;
+	width: 18px;
+	border-radius: 50%;
+	display: inline-block;
+	margin: 2%;
+	cursor: pointer;
+}
