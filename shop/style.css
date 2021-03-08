@@ -120,20 +120,6 @@ button {
   cursor: pointer;
 }
 
-::-webkit-scrollbar {
-  height: 10px;
-  /* height of horizontal scrollbar ← You're missing this */
-  width: 4px;
-  /* width of vertical scrollbar */
-  /* border: 1px solid #fff; */
-}
-
-::-webkit-scrollbar-thumb:horizontal {
-  /*border: 1px solid #fff;*/
-  background-color: #7b1fa2;
-  border-radius: 10px;
-}
-
 .dot {
   height: 18px;
   width: 18px;
