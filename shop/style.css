@@ -112,11 +112,11 @@ button {
   opacity: 0.5;
   width: 64px;
   height: 64px;
-  display: inline;
+  display: inline-block;
   padding: 10px;
   vertical-align: bottom;
   margin-bottom: 2%;
-  background-color: rgb(123, 31, 162, 0.15);
+  background-color: rgb(123, 31, 162, 0.5);
   cursor: pointer;
 }
 
