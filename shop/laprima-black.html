@@ -24,6 +24,18 @@
     }
 </style>
 
+<script>
+    function imageSwap() {
+        if (document.getElementById("img-tshirt").src == "https://vel.boutique/imgs/la_prima1.png") {
+            document.getElementById("img-tshirt").src = "https://vel.boutique/imgs/la_prima4.png";
+            document.getElementById("img-tshirt2").src = "https://vel.boutique/imgs/la_prima1.png";
+        } else {
+            document.getElementById("img-tshirt").src = "https://vel.boutique/imgs/la_prima1.png";
+            document.getElementById("img-tshirt2").src = "https://vel.boutique/imgs/la_prima4tes.png";
+        }
+    }
+</script>
+
 <html>
 
 <body>
@@ -37,20 +49,26 @@
         </div>-->
     </div>
 
-    <div class="w3-center gallery"></a>
-        <ul>
-            <img class="image-slide w3-hover-opacity" src="../imgs/la_prima1.png">
-            <img class="image-slide w3-hover-opacity" src="../imgs/la_prima4.png">
-        </ul>
+    <div id="shirt-container">
+
+        <div class="w3-center" style="margin: 5%;"></a>
+            <ul>
+                <img title="La Prima" id="img-tshirt" class="image-slide w3-hover-opacity" src="../imgs/la_prima1.png">
+                <img onclick="imageSwap()" id="img-tshirt2" class="next-image w3-hover-opacity" src="../imgs/la_prima4.png">
+            </ul>
+        </div>
+
+
+        <h2>La Prima</h2>
+
+        <h3><i>Inspired by the finest italian fashion works,
+                <br>we decided to create something which was simple but incisive.
+                <br>Always fascinated by the elegance, we designed light and simple lines
+                <br>not so common nowadays.</i></h3>
+
+        <p style="margin: 16px; text-align: center; display: block;">Select your size</p>
+
     </div>
-
-
-
-    <h2>La Prima</h2>
-
-    <h3><i>Je suis</i></h3>
-
-    <p style="margin: 16px; text-align: center; display: block;">Select your size</p>
 
     <div class="w3-center" style="margin: auto;" id='product-component-1615155045347'></div>
     <script type="text/javascript">
