@@ -110,11 +110,11 @@ button {
 
 .next-image {
   opacity: 0.5;
-  width: 64px;
-  height: 64px;
+  width: 80px;
+  height: 80px;
   display: block;
   padding: 10px;
-  margin-bottom: 2%;
+  margin: auto;
   background-color: rgb(123, 31, 162, 0.5);
   cursor: pointer;
 }
