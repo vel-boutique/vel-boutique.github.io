@@ -102,7 +102,7 @@ button {
 
 
 .image-slide {
-  display: inline-block;
+  display: block;
   width: 400px;
   height: 400px;
   cursor: pointer;
