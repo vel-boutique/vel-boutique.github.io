@@ -24,18 +24,6 @@
     }
 </style>
 
-<script>
-    function imageSwap() {
-        if (document.getElementById("img-tshirt").src == "https://vel.boutique/imgs/la_prima1.png") {
-            document.getElementById("img-tshirt").src = "https://vel.boutique/imgs/la_prima4.png";
-            document.getElementById("img-tshirt2").src = "https://vel.boutique/imgs/la_prima1.png";
-        } else {
-            document.getElementById("img-tshirt").src = "https://vel.boutique/imgs/la_prima1.png";
-            document.getElementById("img-tshirt2").src = "https://vel.boutique/imgs/la_prima4.png";
-        }
-    }
-</script>
-
 <html>
 
 <body>
@@ -49,15 +37,35 @@
         </div>-->
     </div>
 
-    <div id="shirt-container">
+    <div id="shirt-container" class="w3-center">
 
-        <div class="w3-center" style="margin: auto;">
-            <ul>
-                <img title="La Prima" id="img-tshirt" class="image-slide w3-hover-opacity" src="../imgs/la_prima1.png">
-                <img onclick="imageSwap()" id="img-tshirt2" class="next-image w3-hover-opacity" src="../imgs/la_prima4.png">
-            </ul>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 2</div>
+                <img src="../imgs/la_prima1.png" style="padding: 16px; width: 100%;">
+                <!--<div class="text">Front</div>-->
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 2</div>
+                <img src="../imgs/la_prima4.png" style="padding: 16px; width: 100%;">
+                <!--<div class="text">Retro</div>-->
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev w3-hover-opacity" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next w3-hover-opacity" onclick="plusSlides(1)">&#10095;</a>
         </div>
+        <br>
 
+        <!-- The dots/circles -->
+        <!--<div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>-->
 
         <h2>La Prima</h2>
 
@@ -413,4 +421,33 @@
     document.getElementById("title-nav").onclick = function () {
         location.href = "https://vel.boutique";
     };
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
 </script>
