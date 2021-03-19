@@ -40,6 +40,14 @@
     function toBlack() {
       document.getElementById("item-la-prima").src = "https://vel.boutique/imgs/la_prima1.png";
     }
+
+    function redirectToItemOnEvidence() {
+      if (document.getElementById("item-la-prima").src == "https://vel.boutique/imgs/la_prima3.png") {
+        location.replace("https://vel.boutique/shop/laprima-white.html");
+      } else {
+        location.replace("https://vel.boutque/shop/laprima-black.html");
+      }
+    } 
   </script>
 
   <!-- Page content -->
@@ -82,8 +90,8 @@
           <div class="shop-item">
             <img id="item-la-prima" class="w3-hover-opacity" title="La Prima" src="imgs/la_prima1.png">
             <p class="in-evidence-item-title w3-hover-opacity">La prima</p>
-            <span onclick="toWhite()" id="item-white" class="dot w3-hover-opacity" style="background-color: #fff;"></span>
             <span onclick="toBlack()" id="item-black" class="dot w3-hover-opacity" style="background-color: #000;"></span>
+            <span onclick="toWhite()" id="item-white" class="dot w3-hover-opacity" style="background-color: #fff;"></span>
           </div>
         </div>
       </div>

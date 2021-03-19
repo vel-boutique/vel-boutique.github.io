@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>V E L ∨ La Prima</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#000000">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="../js/chroma.js"></script>
+<script type="text/javascript" src="../js/theme.js"></script>
+<script type="text/javascript" src="../js/db.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    body {
+        background-color: #000;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 100;
+    }
+</style>
+
+<html>
+
+<body>
+    <div class="top-nav">
+        <div>
+            <h1 id="title-nav" title="V e l" class="w3-wide w3-hover-opacity">V E L</h1>
+        </div>
+
+        <!--<div style="display: inline; width: 50%;">
+            <img title="shopping cart" class="w3-hover-opacity" src="../imgs/shop-ico.svg">
+        </div>-->
+    </div>
+
+    <div id="shirt-container" class="w3-center">
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 2</div>
+                <img src="../imgs/la_prima1.png" style="padding: 16px; width: 100%;">
+                <!--<div class="text">Front</div>-->
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 2</div>
+                <img src="../imgs/la_prima4.png" style="padding: 16px; width: 100%;">
+                <!--<div class="text">Retro</div>-->
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev w3-hover-opacity" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next w3-hover-opacity" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <!--<div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>-->
+
+        <h2>La Prima</h2>
+
+        <h3><i>Inspired by the finest italian fashion works,
+                <br>we decided to create something which was simple but incisive.
+                <br>Always fascinated by the elegance, we designed light and simple lines
+                <br>not so common nowadays.</i></h3>
+
+        <p style="margin: 16px; text-align: center; display: block;">Select your size</p>
+
+    </div>
+
+    <div class="w3-center" style="margin: auto;" id='product-component-1615155045347'></div>
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        (function () {
+            var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+            if (window.ShopifyBuy) {
+                if (window.ShopifyBuy.UI) {
+                    ShopifyBuyInit();
+                } else {
+                    loadScript();
+                }
+            } else {
+                loadScript();
+            }
+            function loadScript() {
+                var script = document.createElement('script');
+                script.async = true;
+                script.src = scriptURL;
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                script.onload = ShopifyBuyInit;
+            }
+            function ShopifyBuyInit() {
+                var client = ShopifyBuy.buildClient({
+                    domain: 'vel-shop-vel.myshopify.com',
+                    storefrontAccessToken: '27194afb7a0ebc50d120105583a18fbd',
+                });
+                ShopifyBuy.UI.onReady(client).then(function (ui) {
+                    ui.createComponent('product', {
+                        id: '6161998053530',
+                        node: document.getElementById('product-component-1615155045347'),
+                        moneyFormat: '%E2%82%AC%7B%7Bamount_with_comma_separator%7D%7D',
+                        options: {
+                            "product": {
+                                "styles": {
+                                    "product": {
+                                        "@media (min-width: 601px)": {
+                                            "max-width": "calc(25% - 20px)",
+                                            "margin-left": "20px",
+                                            "margin-bottom": "50px"
+                                        }
+                                    },
+                                    "title": {
+                                        "display": "none",
+                                        "font-family": "Montserrat, sans-serif",
+                                        "font-weight": "normal",
+                                        "color": "#ffffff"
+                                    },
+                                    "button": {
+                                        "font-family": "Montserrat, sans-serif",
+                                        "font-size": "14px",
+                                        "padding-top": "15px",
+                                        "padding-bottom": "15px",
+                                        ":hover": {
+                                            "background-color": "#000000"
+                                        },
+                                        "background-color": "#000000",
+                                        ":focus": {
+                                            "background-color": "#000000"
+                                        },
+                                        "border-radius": "2px",
+                                        "padding-left": "24px",
+                                        "padding-right": "24px"
+                                    },
+                                    "quantityInput": {
+                                        "font-size": "14px",
+                                        "padding-top": "15px",
+                                        "padding-bottom": "15px"
+                                    },
+                                    "price": {
+                                        "display": "none",
+                                        "font-family": "Montserrat, sans-serif",
+                                        "color": "#ffffff"
+                                    },
+                                    "compareAt": {
+                                        "font-family": "Montserrat, sans-serif",
+                                        "color": "#ffffff"
+                                    },
+                                    "unitPrice": {
+                                        "font-family": "Montserrat, sans-serif",
+                                        "color": "#ffffff"
+                                    },
+                                    "description": {
+                                        "color": "#000000"
+                                    }
+                                },
+                                "text": {
+                                    "button": "Add to cart"
+                                },
+                                "googleFonts": [
+                                    "Montserrat"
+                                ]
+                            },
+                            "productSet": {
+                                "styles": {
+                                    "products": {
+                                        "@media (min-width: 601px)": {
+                                            "margin-left": "-20px"
+                                        }
+                                    }
+                                }
+                            },
+                            "modalProduct": {
+                                "contents": {
+                                    "img": false,
+                                    "imgWithCarousel": true,
+                                    "button": false,
+                                    "buttonWithQuantity": true
+                                },
+                                "styles": {
+                                    "product": {
+                                        "@media (min-width: 601px)": {
+                                            "max-width": "100%",
+                                            "margin-left": "0px",
+                                            "margin-bottom": "0px"
+                                        }
+                                    },
+                                    "button": {
+                                        "font-family": "Montserrat, sans-serif",
+                                        "font-size": "14px",
+                                        "padding-top": "15px",
+                                        "padding-bottom": "15px",
+                                        ":hover": {
+                                            "background-color": "#000000"
+                                        },
+                                        "background-color": "#000000",
+                                        ":focus": {
+                                            "background-color": "#000000"
+                                        },
+                                        "border-radius": "2px",
+                                        "padding-left": "24px",
+                                        "padding-right": "24px"
+                                    },
+                                    "quantityInput": {
+                                        "font-size": "14px",
+                                        "padding-top": "15px",
+                                        "padding-bottom": "15px"
+                                    },
+                                    "title": {
+                                        "display": "none",
+                                        "font-family": "Helvetica Neue, sans-serif",
+                                        "font-weight": "bold",
+                                        "font-size": "26px",
+                                        "color": "#4c4c4c"
+                                    },
+                                    "price": {
+                                        "font-family": "Helvetica Neue, sans-serif",
+                                        "font-weight": "normal",
+                                        "font-size": "18px",
+                                        "color": "#4c4c4c"
+                                    },
+                                    "compareAt": {
+                                        "font-family": "Helvetica Neue, sans-serif",
+                                        "font-weight": "normal",
+                                        "font-size": "15.299999999999999px",
+                                        "color": "#4c4c4c"
+                                    },
+                                    "unitPrice": {
+                                        "font-family": "Helvetica Neue, sans-serif",
+                                        "font-weight": "normal",
+                                        "font-size": "15.299999999999999px",
+                                        "color": "#4c4c4c"
+                                    },
+                                    "description": {
+                                        "font-family": "Helvetica Neue, sans-serif",
+                                        "font-weight": "normal",
+                                        "font-size": "14px",
+                                        "color": "#4c4c4c"
+                                    }
+                                },
+                                "googleFonts": [
+                                    "Montserrat"
+                                ],
+                                "text": {
+                                    "button": "Add to cart"
+                                }
+                            },
+                            "option": {
+                                "styles": {
+                                    "label": {
+                                        "font-family": "Montserrat, sans-serif"
+                                    },
+                                    "select": {
+                                        "font-family": "Montserrat, sans-serif"
+                                    }
+                                },
+                                "googleFonts": [
+                                    "Montserrat"
+                                ]
+                            },
+                            "cart": {
+                                "styles": {
+                                    "button": {
+                                        "font-family": "Montserrat, sans-serif",
+                                        "font-size": "14px",
+                                        "padding-top": "15px",
+                                        "padding-bottom": "15px",
+                                        ":hover": {
+                                            "background-color": "#000000"
+                                        },
+                                        "background-color": "#000000",
+                                        ":focus": {
+                                            "background-color": "#000000"
+                                        },
+                                        "border-radius": "2px"
+                                    },
+                                    "title": {
+                                        "color": "#242424"
+                                    },
+                                    "header": {
+                                        "color": "#242424"
+                                    },
+                                    "lineItems": {
+                                        "color": "#242424"
+                                    },
+                                    "subtotalText": {
+                                        "color": "#242424"
+                                    },
+                                    "subtotal": {
+                                        "color": "#242424"
+                                    },
+                                    "notice": {
+                                        "color": "#242424"
+                                    },
+                                    "currency": {
+                                        "color": "#242424"
+                                    },
+                                    "close": {
+                                        "color": "#242424",
+                                        ":hover": {
+                                            "color": "#242424"
+                                        }
+                                    },
+                                    "empty": {
+                                        "color": "#242424"
+                                    },
+                                    "noteDescription": {
+                                        "color": "#242424"
+                                    },
+                                    "discountText": {
+                                        "color": "#242424"
+                                    },
+                                    "discountIcon": {
+                                        "fill": "#242424"
+                                    },
+                                    "discountAmount": {
+                                        "color": "#242424"
+                                    }
+                                },
+                                "text": {
+                                    "total": "Subtotal",
+                                    "button": "Checkout"
+                                },
+                                "popup": false,
+                                "googleFonts": [
+                                    "Montserrat"
+                                ]
+                            },
+                            "toggle": {
+                                "styles": {
+                                    "toggle": {
+                                        "font-family": "Montserrat, sans-serif",
+                                        "background-color": "#000000",
+                                        ":hover": {
+                                            "background-color": "#000000"
+                                        },
+                                        ":focus": {
+                                            "background-color": "#000000"
+                                        }
+                                    },
+                                    "count": {
+                                        "font-size": "14px"
+                                    }
+                                },
+                                "googleFonts": [
+                                    "Montserrat"
+                                ]
+                            },
+                            "lineItem": {
+                                "styles": {
+                                    "variantTitle": {
+                                        "color": "#242424"
+                                    },
+                                    "title": {
+                                        "color": "#242424"
+                                    },
+                                    "price": {
+                                        "color": "#242424"
+                                    },
+                                    "fullPrice": {
+                                        "color": "#242424"
+                                    },
+                                    "discount": {
+                                        "color": "#242424"
+                                    },
+                                    "discountIcon": {
+                                        "fill": "#242424"
+                                    },
+                                    "quantity": {
+                                        "color": "#242424"
+                                    },
+                                    "quantityIncrement": {
+                                        "color": "#242424",
+                                        "border-color": "#242424"
+                                    },
+                                    "quantityDecrement": {
+                                        "color": "#242424",
+                                        "border-color": "#242424"
+                                    },
+                                    "quantityInput": {
+                                        "color": "#242424",
+                                        "border-color": "#242424"
+                                    }
+                                }
+                            }
+                        },
+                    });
+                });
+            }
+        })();
+/*]]>*/
+    </script>
+
+
+    <footer style="display: flex; justify-content: center;" class="w3-container w3-padding-32 w3-center">
+        <p class="text-footer"><a class="w3-hover-opacity" title="Instagram"
+                href="https://www.instagram.com/vel.boutique">
+                <!--<img src="imgs/instagram-ico.png" style="width: 24px; height: 24px;"></img>-->Instagram
+            </a></p>
+        <p class="text-footer"><a class="w3-hover-opacity" title="Email" href="mailto:vel@vel.boutique">
+                <!--<img src="imgs/email-ico.png" style="width: 24px; height: 24px;"></img>-->Contact
+            </a></p>
+        <p class="text-footer"><a class="w3-hover-opacity" title="Business" href="mailto:vel@vel.boutique">Business</a>
+        </p>
+        <p class="text-footer"><a class="w3-hover-opacity" href="https://vel.boutique/vel.html">© 2021</a></p>
+    </footer>
+</body>
+
+</html>
+
+<script>
+    document.getElementById("title-nav").onclick = function () {
+        location.href = "https://vel.boutique";
+    };
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+</script>
