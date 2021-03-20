@@ -35,15 +35,21 @@
 
     function toWhite() {
       document.getElementById("item-la-prima").src = "https://vel.boutique/imgs/la_prima3.png";
+      document.getElementById("item-la-prima").style = "opacity: 0.1"
+      document.getElementById("item-title").innerHTML = ""
+      document.getElementById("item-over").innerHTML = "Coming soon..."
     }
 
     function toBlack() {
       document.getElementById("item-la-prima").src = "https://vel.boutique/imgs/la_prima1.png";
+      document.getElementById("item-title").innerHTML = "La Prima"
+      document.getElementById("item-la-prima").style = "opacity: 1"
+      document.getElementById("item-over").innerHTML = ""
     }
 
     function redirectToItemOnEvidence() {
       if (document.getElementById("item-la-prima").src == "https://vel.boutique/imgs/la_prima3.png") {
-        location.replace("https://vel.boutique/shop/laprima-white.html");
+        // location.replace("https://vel.boutique/shop/laprima-white.html");
       } else {
         location.replace("https://vel.boutique/shop/laprima-black.html");
       }
@@ -88,10 +94,16 @@
 
         <div class="w3-center in-evidence">
           <div class="shop-item">
-            <img onclick="redirectToItemOnEvidence()" id="item-la-prima" class="w3-hover-opacity" title="La Prima" src="imgs/la_prima1.png">
-            <p class="in-evidence-item-title w3-hover-opacity">La prima</p>
-            <span onclick="toBlack()" id="item-black" class="dot w3-hover-opacity" style="background-color: #000;"></span>
-            <span onclick="toWhite()" id="item-white" class="dot w3-hover-opacity" style="background-color: #fff;"></span>
+            <div>
+              <p id="item-over" style="position: absolute; margin-top: 150px; margin-left: 100px;"></p>
+              <img onclick="redirectToItemOnEvidence()" id="item-la-prima" class="w3-hover-opacity" title="La Prima"
+                src="imgs/la_prima1.png">
+            </div>
+            <p id="item-title" class="in-evidence-item-title w3-hover-opacity">La prima</p>
+            <span onclick="toBlack()" id="item-black" class="dot w3-hover-opacity"
+              style="background-color: #000;"></span>
+            <span onclick="toWhite()" id="item-white" class="dot w3-hover-opacity"
+              style="background-color: #fff;"></span>
           </div>
         </div>
       </div>
