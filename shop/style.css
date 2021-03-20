@@ -116,7 +116,9 @@ button {
 
 /* slider */
 
-* {box-sizing:border-box}
+* {
+  box-sizing: border-box
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -131,7 +133,8 @@ button {
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   top: 50%;
   width: 100px;
@@ -170,7 +173,8 @@ button {
   top: 0;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #f2f2f2;
 }
 
@@ -183,11 +187,33 @@ button {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+.delivery-alert {
+  position: relative;
+  bottom: 16px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.delivery-alert p {
+  text-align: center;
+  font-size: 12px;
 }
