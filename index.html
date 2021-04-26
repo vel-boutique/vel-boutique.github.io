@@ -35,9 +35,9 @@
 
     function toWhite() {
       document.getElementById("item-la-prima").src = "https://vel.boutique/imgs/la_prima3.png";
-      document.getElementById("item-la-prima").style = "opacity: 0.1"
-      document.getElementById("item-title").innerHTML = ""
-      document.getElementById("item-over").innerHTML = "Coming soon..."
+      // document.getElementById("item-la-prima").style = "opacity: 0.1"
+      // document.getElementById("item-title").innerHTML = ""
+      // document.getElementById("item-over").innerHTML = "Coming soon..."
     }
 
     function toBlack() {
@@ -49,7 +49,7 @@
 
     function redirectToItemOnEvidence() {
       if (document.getElementById("item-la-prima").src == "https://vel.boutique/imgs/la_prima3.png") {
-        // location.replace("https://vel.boutique/shop/laprima-white.html");
+        location.replace("https://vel.boutique/shop/laprima-white.html");
       } else {
         location.replace("https://vel.boutique/shop/laprima-black.html");
       }
