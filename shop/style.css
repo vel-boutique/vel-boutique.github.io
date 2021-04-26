@@ -206,14 +206,14 @@ button {
   }
 }
 
-.delivery-alert {
+.alert {
   position: relative;
   bottom: 16px;
   max-width: 500px;
   margin: auto;
 }
 
-.delivery-alert p {
+.alert p {
   text-align: center;
   font-size: 12px;
   padding: 2%;
