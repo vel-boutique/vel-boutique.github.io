@@ -148,19 +148,44 @@ div {
 }
 
 .in-evidence img {
-    width: 220px;
-    height: 280px;
+    width: 180px;
+    height: 220px;
+}
+
+.in-evidence p {
+    text-align: left;
 }
 
 .shop-item {
     display: inline-block;
-    width: 300px;
-    height: 450px;
-    margin: 0%;
+    width: 180px;
+    height: 250px;
 }
 
 .in-evidence-item-title {
     font-weight: 100;
-    font-size: 24px;
+    font-size: 18px;
     text-align: left;
+}
+
+@media all and (max-width: 600px) and (orientation: portrait) {
+    .in-evidence {
+        margin: 0%;
+        height: 450px;
+        cursor: pointer;
+    }
+    .in-evidence img {
+        width: 130px;
+        height: 150px;
+    }
+    .in-evidence p {
+        text-align: left;
+        font-size: 12px;
+    }
+    .shop-item {
+        display: inline-block;
+        width: 120px;
+        height: 220px;
+        margin: 5%;
+    }
 }
