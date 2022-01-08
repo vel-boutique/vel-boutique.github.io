@@ -1,5 +1,5 @@
 .top-nav {
-  background-color: #000;
+  background-color: #f2f2f2;
   overflow: hidden;
   max-height: 80px;
   display: flex;
@@ -9,7 +9,7 @@
 }
 
 .top-nav h1 {
-  color: #fff;
+  color: #000;
   font-family: "Montserrat", sans-serif;
   cursor: pointer;
   margin-left: 16px;
@@ -40,7 +40,7 @@ h2 {
   text-align: center;
   font-size: 48px;
   font-family: "Montserrat", sans-serif;
-  color: #fff;
+  color: #000;
   font-weight: 300;
   padding: 16px;
   font-weight: 100;
@@ -50,7 +50,7 @@ h3 {
   text-align: center;
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
-  color: #fff;
+  color: #000;
   font-weight: 100;
 }
 
@@ -59,7 +59,7 @@ h3 {
 }
 
 p {
-  color: #fff;
+  color: #000;
 }
 
 img {
@@ -73,11 +73,11 @@ a {
 }
 
 button {
-  border: 1px solid #fff;
+  border: 1px solid #000;
   background-color: rgb(256, 256, 256, 0);
   cursor: pointer;
   min-width: 15%;
-  color: #fff;
+  color: #000;
   padding: 8px;
   margin: 2px;
 }
@@ -85,7 +85,7 @@ button {
 .size {
   background-color: rgb(256, 256, 256, 0);
   cursor: pointer;
-  color: #fff;
+  color: #000;
   padding: 8px;
   border: none;
   min-width: 30%;

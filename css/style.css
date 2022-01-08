@@ -1,172 +1,172 @@
+@media all and (max-width: 600px) and (orientation: portrait) {
+    body {
+        margin: 5%;
+    }
+}
+
 p {
-	color: #fff;
-	font-weight: 100;
-
-}
-
-
-.vel-title-style {
-	font-style: normal;
-	font-weight: normal;
-	text-align: center;
-	font-size: 150px;
-	font-weight: 100;
-	text-decoration: none;
-}
-
-.vel-text-style {
-	font-style: normal;
-	font-weight: normal;
-	text-align: center;
-	font-size: 48px;
-	font-weight: 100;
-	letter-spacing: 0.25em;
-	text-decoration: none;
-}
-
-.shop-box {
-	margin-right: 32px;
-	margin-left: 32px;
-}
-
-.text-footer {
-	font-size: 14px;
-	padding: 14px;
-	cursor: pointer;
+    color: #000;
+    font-weight: 100;
 }
 
 a {
-	text-decoration: none;
+    text-decoration: none;
 }
+
+div {
+    word-wrap: break-word;
+}
+
+.div-title {
+    height: 650px;
+}
+
+@media all and (max-width: 600px) and (orientation: portrait) {
+    .div-title {
+        height: 400px;
+    }
+}
+
+.vel-title-style {
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    font-size: 150px;
+    font-weight: 100;
+    text-decoration: none;
+}
+
+@media all and (max-width: 600px) and (orientation: portrait) {
+    .vel-title-style {
+        font-style: normal;
+        font-weight: normal;
+        text-align: center;
+        font-size: 100px;
+        font-weight: 100;
+        text-decoration: none;
+    }
+}
+
+.vel-text-style {
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+    font-size: 48px;
+    font-weight: 100;
+    letter-spacing: 0.25em;
+    text-decoration: none;
+}
+
+.shop-box {
+    margin-right: 32px;
+    margin-left: 32px;
+}
+
+.text-footer {
+    font-size: 14px;
+    padding: 14px;
+    cursor: pointer;
+}
+
 
 /**
 * title animation 
 */
 
 #V {
-	opacity: 1;
-	animation: flickerV 2.5s linear;
+    opacity: 1;
+    animation: flickerV 2.5s linear;
 }
 
 #V::after {
-	content: '';
-	width: 100%;
-	box-shadow: -50px 0px 128px 10px rgba(255, 255, 255, 0.8);
+    content: '';
+    width: 100%;
+    box-shadow: -50px 0px 128px 10px rgba(255, 255, 255, 0.8);
 }
 
 @keyframes flickerV {
-	0% {
-		opacity: 0.01;
-	}
-
-	5% {
-		opacity: 0.05;
-	}
-
-	10% {
-		opacity: 0.1;
-	}
-
-	15% {
-		opacity: 0.15;
-	}
-
-	25% {
-		opacity: 0.25;
-	}
-
-	30% {
-		opacity: 0.30;
-	}
-
-	35% {
-		opacity: 0.35;
-	}
-
-	40% {
-		opacity: 0.40;
-	}
-
-	45% {
-		opacity: 0.45;
-	}
-
-	50% {
-		opacity: 0.50;
-	}
-
-	55% {
-		opacity: 0.55;
-	}
-
-	60% {
-		opacity: 0.60;
-	}
-
-	65% {
-		opacity: 0.65;
-	}
-
-	70% {
-		opacity: 0.70;
-	}
-
-	75% {
-		opacity: 0.75;
-	}
-
-	80% {
-		opacity: 0.80;
-	}
-
-	85% {
-		opacity: 0.85;
-	}
-
-	90% {
-		opacity: 0.90;
-	}
-
-	95% {
-		opacity: 0.95;
-	}
-
-	100% {
-		opacity: 1;
-	}
+    0% {
+        opacity: 0.01;
+    }
+    5% {
+        opacity: 0.05;
+    }
+    10% {
+        opacity: 0.1;
+    }
+    15% {
+        opacity: 0.15;
+    }
+    25% {
+        opacity: 0.25;
+    }
+    30% {
+        opacity: 0.30;
+    }
+    35% {
+        opacity: 0.35;
+    }
+    40% {
+        opacity: 0.40;
+    }
+    45% {
+        opacity: 0.45;
+    }
+    50% {
+        opacity: 0.50;
+    }
+    55% {
+        opacity: 0.55;
+    }
+    60% {
+        opacity: 0.60;
+    }
+    65% {
+        opacity: 0.65;
+    }
+    70% {
+        opacity: 0.70;
+    }
+    75% {
+        opacity: 0.75;
+    }
+    80% {
+        opacity: 0.80;
+    }
+    85% {
+        opacity: 0.85;
+    }
+    90% {
+        opacity: 0.90;
+    }
+    95% {
+        opacity: 0.95;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .in-evidence {
-	margin: 5%;
-	height: 450px;
+    margin: 0%;
+    height: 450px;
+    cursor: pointer;
 }
 
 .in-evidence img {
-	width: 300px;
-	height: 300px;
-	cursor: pointer;
+    width: 220px;
+    height: 300px;
 }
 
 .shop-item {
-	display: inline-block;
-	width: 300px;
-	height: 450px;
-	margin: 5%;
+    display: inline-block;
+    width: 300px;
+    height: 450px;
+    margin: 0%;
 }
 
 .in-evidence-item-title {
-	font-weight: 100;
-	font-size: 24px;
-	text-align: center;
-	color: #fff;
-	cursor: pointer;
-}
-
-.dot {
-	height: 18px;
-	width: 18px;
-	border-radius: 50%;
-	display: inline-block;
-	margin: 2%;
-	cursor: pointer;
+    font-weight: 100;
+    font-size: 24px;
+    text-align: left;
 }
