@@ -3,22 +3,21 @@
 <title>V E L ∨ La Prima</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#000000">
+<meta name="theme-color" content="#f2f2f2">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f2f2f2">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" type="text/css" href="style.css">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type="text/javascript" src="../js/chroma.js"></script>
-<script type="text/javascript" src="../js/theme.js"></script>
+<!-- <script type="text/javascript" src="../js/chroma.js"></script> -->
+<!-- <script type="text/javascript" src="../js/theme.js"></script> -->
 <script type="text/javascript" src="../js/db.js"></script>
 <link rel="preconnect" href="https://fonts.gstatic.com">
 
 
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
     body {
-        background-color: #000;
+        background-color: #f2f2f2;
         font-family: "Montserrat", sans-serif;
         font-weight: 100;
     }
@@ -29,7 +28,9 @@
 <body>
     <div class="top-nav">
         <div>
-            <h1 id="title-nav" title="V e l" class="w3-wide w3-hover-opacity">V E L</h1>
+            <a href="https://vel.boutique">
+                <h1 id="title-nav" title="V e l" class="w3-wide w3-hover-opacity">V E L</h1>
+            </a>
         </div>
 
         <!--<div style="display: inline; width: 50%;">
@@ -37,32 +38,14 @@
         </div>-->
     </div>
 
-    <div class="alert"><p>
-        Due to the difficult situation caused by the COVID-19 pandemic, deliveries may take more than expected</p></div>
-
+    <div class="alert">
+        <p>
+            Due to the difficult situation caused by the COVID-19 pandemic, deliveries may take more than expected</p>
+    </div>
 
     <div id="shirt-container" class="w3-center">
 
-        <!-- Slideshow container -->
-        <div class="slideshow-container">
 
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 2</div>
-                <img src="../imgs/la_prima3.png" style="padding: 16px; width: 100%;">
-                <!--<div class="text">Front</div>-->
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 2</div>
-                <img src="../imgs/la_prima2.png" style="padding: 16px; width: 100%;">
-                <!--<div class="text">Retro</div>-->
-            </div>
-
-            <!-- Next and previous buttons -->
-            <a class="prev w3-hover-opacity" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next w3-hover-opacity" onclick="plusSlides(1)">&#10095;</a>
-        </div>
         <br>
 
         <!-- The dots/circles -->
@@ -71,23 +54,25 @@
             <span class="dot" onclick="currentSlide(2)"></span>
         </div>-->
 
-        <h2>La Prima</h2>
+        <h2>"La Prima"</h2>
 
-        <h3><i>Inspired by the finest italian fashion works,
+        <h3 style="margin: 5%;"><i>Inspired by the finest italian fashion works,
                 <br>we decided to create something which was simple but incisive.
-                <br>Always fascinated by the elegance, we designed light 
+                <br>Always fascinated by the elegance, we designed light
                 <br>and simple lines not so common nowadays.</i></h3>
 
-        <p title="S, M, L, XL" style="margin: 16px; text-align: center; display: block;">Select your size</p>
 
-        <p>€ 70</p>
+        <!-- <p title="S, M, L, XL" style="margin: 16px; text-align: center; display: block;">Select your size</p> -->
+
+        <!-- <p>€ 70</p> -->
 
     </div>
 
-    <div id='product-component-1616264314014' style="margin: auto;"></div>
+    <!-- BUY BUTTON -->
+    <div id='product-component-1641661160860'></div>
     <script type="text/javascript">
         /*<![CDATA[*/
-        (function () {
+        (function() {
             var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
             if (window.ShopifyBuy) {
                 if (window.ShopifyBuy.UI) {
@@ -98,6 +83,7 @@
             } else {
                 loadScript();
             }
+
             function loadScript() {
                 var script = document.createElement('script');
                 script.async = true;
@@ -105,35 +91,34 @@
                 (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
                 script.onload = ShopifyBuyInit;
             }
+
             function ShopifyBuyInit() {
                 var client = ShopifyBuy.buildClient({
                     domain: 'vel-shop-vel.myshopify.com',
                     storefrontAccessToken: '27194afb7a0ebc50d120105583a18fbd',
                 });
-                ShopifyBuy.UI.onReady(client).then(function (ui) {
+                ShopifyBuy.UI.onReady(client).then(function(ui) {
                     ui.createComponent('product', {
                         id: '6599069532314',
-                        node: document.getElementById('product-component-1616264314014'),
+                        node: document.getElementById('product-component-1641661160860'),
                         moneyFormat: '%E2%82%AC%7B%7Bamount_with_comma_separator%7D%7D',
                         options: {
                             "product": {
                                 "styles": {
                                     "product": {
                                         "@media (min-width: 601px)": {
-                                            "max-width": "calc(25% - 20px)",
-                                            "margin-left": "20px",
+                                            "max-width": "100%",
+                                            "margin-left": "0",
                                             "margin-bottom": "50px"
-                                        }
-                                    },
-                                    "img": {
-                                        "display": "none"
-
+                                        },
+                                        "text-align": "left"
                                     },
                                     "title": {
-                                        "display": "none",
                                         "font-family": "Montserrat, sans-serif",
                                         "font-weight": "normal",
-                                        "color": "#ffffff"
+                                        "font-size": "26px",
+                                        "color": "#ffffff",
+                                        "display": "none"
                                     },
                                     "button": {
                                         "font-family": "Montserrat, sans-serif",
@@ -157,22 +142,31 @@
                                         "padding-bottom": "15px"
                                     },
                                     "price": {
-                                        "display": "none",
                                         "font-family": "Montserrat, sans-serif",
-                                        "color": "#ffffff"
+                                        "font-size": "18px",
+                                        "color": "#000"
                                     },
                                     "compareAt": {
                                         "font-family": "Montserrat, sans-serif",
+                                        "font-size": "15.299999999999999px",
                                         "color": "#ffffff"
                                     },
                                     "unitPrice": {
                                         "font-family": "Montserrat, sans-serif",
+                                        "font-size": "15.299999999999999px",
                                         "color": "#ffffff"
                                     },
                                     "description": {
                                         "color": "#000000"
                                     }
                                 },
+                                "layout": "horizontal",
+                                "contents": {
+                                    "img": false,
+                                    "imgWithCarousel": true,
+                                    "description": true
+                                },
+                                "width": "100%",
                                 "text": {
                                     "button": "Add to cart"
                                 },
@@ -406,17 +400,21 @@
                 });
             }
         })();
-    /*]]>*/
+        /*]]>*/
     </script>
 
+
     <footer style="display: flex; justify-content: center;" class="w3-container w3-padding-32 w3-center">
-        <p class="text-footer"><a class="w3-hover-opacity" title="Instagram"
-                href="https://www.instagram.com/vel.boutique">
+        <p class="text-footer">
+            <a class="w3-hover-opacity" title="Instagram" href="https://www.instagram.com/vel.boutique">
                 <!--<img src="imgs/instagram-ico.png" style="width: 24px; height: 24px;"></img>-->Instagram
-            </a></p>
-        <p class="text-footer"><a class="w3-hover-opacity" title="Email" href="mailto:vel@vel.boutique">
+            </a>
+        </p>
+        <p class="text-footer">
+            <a class="w3-hover-opacity" title="Email" href="mailto:vel@vel.boutique">
                 <!--<img src="imgs/email-ico.png" style="width: 24px; height: 24px;"></img>-->Contact
-            </a></p>
+            </a>
+        </p>
         <p class="text-footer"><a class="w3-hover-opacity" title="Business" href="mailto:vel@vel.boutique">Business</a>
         </p>
         <p class="text-footer"><a class="w3-hover-opacity" href="https://vel.boutique/vel.html">Policy and more</a></p>
@@ -424,38 +422,3 @@
 </body>
 
 </html>
-
-<script>
-    document.getElementById("title-nav").onclick = function () {
-        location.href = "https://vel.boutique";
-    };
-
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    // Next/previous controls
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
-
-    // Thumbnail image controls
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) { slideIndex = 1 }
-        if (n < 1) { slideIndex = slides.length }
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-    }
-</script>

@@ -18,13 +18,7 @@ div {
 }
 
 .div-title {
-    height: 650px;
-}
-
-@media all and (max-width: 600px) and (orientation: portrait) {
-    .div-title {
-        height: 400px;
-    }
+    height: 100%;
 }
 
 .vel-title-style {

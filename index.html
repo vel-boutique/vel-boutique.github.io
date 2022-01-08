@@ -13,8 +13,10 @@
 <link rel="stylesheet" href="css/style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link rel="preload" href="imgs/la_prima1.png" as="image">
-<link rel="preload" href="imgs/la_prima3.png" as="image">
+<link rel="preload" href="imgs/la_prima_b.jpg" as="image">
+<link rel="preload" href="imgs/la_prima_w.jpeg" as="image">
+<link rel="preload" href="imgs/the_shorts.jpg" as="image">
+<link rel="preload" href="imgs/the_spring_hoodie.jpg" as="image">
 
 <!--<script type="text/javascript" src="js/chroma.js"></script>-->
 <!--<script type="text/javascript" src="js/theme.js"></script>-->
@@ -35,25 +37,17 @@
         $(function() {
             $(document).tooltip();
         });
-
-        /*function redirectToItemOnEvidence() {
-          if (document.getElementById("item-la-prima").src == "https://vel.boutique/imgs/la_prima3.png") {
-            location.replace("https://vel.boutique/shop/laprima-white.html");
-          } else {
-            location.replace("https://vel.boutique/shop/laprima-black.html");
-          }
-        }*/
     </script>
 
     <!-- Page content -->
-    <div class="w3-content" style="max-width:2000px;margin-top:46px">
+    <div class="w3-content" style="max-width:2000px;margin-top:46px;">
 
         <!-- main -->
         <div class="w3-container w3-content w3-center div-title" id="main">
             <p class="vel-title-style" id="V" href="#shop">V E L</p>
         </div>
 
-        <div class="w3-container w3-content" style="max-width: 800px;" id="philosophy">
+        <div class="w3-container w3-content" style="max-width: 800px; margin-top: 10%;" id="philosophy">
             <p class="w3-wide vel-title vel-text-style" style="top: 50%;">Philosophy</p>
             <p class="w3-opacity">
                 <i>"Vel is not for everyone. <br>
@@ -74,54 +68,82 @@
         </div>
 
         <!-- Shop Section -->
-        <div id="shop">
-            <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-                <p class="w3-wide vel-text-style">Shop</p>
+        <div id="shop" class="w3-container w3-content w3-padding-64" style="max-width:800px">
+            <p class="w3-wide vel-text-style">Shop</p>
 
-                <!--<p class="w3-center" style="color: #FFFFFF;"><i>Coming soon...</i></p>-->
+            <!--<p class="w3-center" style="color: #FFFFFF;"><i>Coming soon...</i></p>-->
 
-                <div class="in-evidence">
-                    <!-- !!! image is under in-evidence img !!! -->
+            <div class="in-evidence" style="overflow-x: scroll;
+            white-space: nowrap;">
+                <!-- !!! image is under in-evidence img !!! -->
+                <a href="https://vel.boutique/shop/laprima-white.html">
                     <div class="shop-item">
                         <!--<p id="item-over" style="position: absolute; margin-top: 150px; margin-left: 100px;"></p>-->
-                        <img onclick="redirectToItemOnEvidence()" id="item-la-prima" class="w3-hover-opacity" title="La Prima" src="imgs/la_prima1.png">
+                        <img onclick="redirectToItemOnEvidence()" id="evidence-item" class="w3-hover-opacity" title="La Prima" src="imgs/la_prima_b.jpg">
                         <p onclick="redirectToItemOnEvidence()" id="item-title" class="in-evidence-item-title w3-hover-opacity">"La prima" t-shirt
                         </p>
                         <p>50,00€</p>
                     </div>
-                </div>
+                </a>
+                <a href="https://vel.boutique/shop/laprima-black.html">
+                    <div class="shop-item">
+                        <!--<p id="item-over" style="position: absolute; margin-top: 150px; margin-left: 100px;"></p>-->
+                        <img onclick="redirectToItemOnEvidence()" id="evidence-item" class="w3-hover-opacity" title="La Prima" src="imgs/la_prima_w.jpeg">
+                        <p onclick="redirectToItemOnEvidence()" id="item-title" class="in-evidence-item-title w3-hover-opacity">"La prima" t-shirt
+                        </p>
+                        <p>50,00€</p>
+                    </div>
+                </a>
+                <a href="https://vel.boutique/shop/theshorts.html">
+                    <div class="shop-item">
+                        <!--<p id="item-over" style="position: absolute; margin-top: 150px; margin-left: 100px;"></p>-->
+                        <img onclick="redirectToItemOnEvidence()" id="evidence-item" class="w3-hover-opacity" title="La Prima" src="imgs/the_shorts.jpg">
+                        <p onclick="redirectToItemOnEvidence()" id="item-title" class="in-evidence-item-title w3-hover-opacity">"The The shorts"
+                        </p>
+                        <p>30,00€</p>
+                    </div>
+                </a>
+                <a href="https://vel.boutique/shop/thespring-hoodie.html">
+                    <div class="shop-item">
+                        <!--<p id="item-over" style="position: absolute; margin-top: 150px; margin-left: 100px;"></p>-->
+                        <img onclick="redirectToItemOnEvidence()" id="evidence-item" class="w3-hover-opacity" title="La Prima" src="imgs/the_spring_hoodie.jpg">
+                        <p onclick="redirectToItemOnEvidence()" id="item-title" class="in-evidence-item-title w3-hover-opacity">"The spring hoodie"
+                        </p>
+                        <p>100,00€</p>
+                    </div>
+                </a>
             </div>
+        </div>
 
-            <!-- The Contact Section -->
-            <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="about-us">
-                <p class="w3-wide vel-text-style">About us</p>
-                <p class="w3-opacity"><i>
-            ∨ Designed and handcrafted in Italy<br>
-            <br>
-            ∨ Production and Packaging 100% plastic free <br>
-            <br>
-            ∨ No cookies, No subscription, No data collected
-          </i></p>
-                <div style="padding-top: 5%;">
-                    <!--<p class="w3-medium w3-center" style="color: #FFFFFF"><i>Est. 2021</i></p>-->
-                </div>
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px;" id="about-us">
+            <p class="w3-wide vel-text-style">About us</p>
+            <p class="w3-opacity"><i>
+          ∨ Designed and handcrafted in Italy<br>
+          <br>
+          ∨ Production and Packaging 100% plastic free <br>
+          <br>
+          ∨ No cookies, No subscription, No data collected
+        </i></p>
+            <div style="padding-top: 5%;">
+                <!--<p class="w3-medium w3-center" style="color: #FFFFFF"><i>Est. 2021</i></p>-->
             </div>
+        </div>
 
-            <footer style="display: flex; justify-content: center;" class="w3-container w3-padding-32 w3-center">
-                <p class="text-footer">
-                    <a class="w3-hover-opacity" title="Instagram" href="https://www.instagram.com/vel.boutique">
-                        <!--<img src="imgs/instagram-ico.png" style="width: 24px; height: 24px;"></img>-->Instagram
-                    </a>
-                </p>
-                <p class="text-footer">
-                    <a class="w3-hover-opacity" title="Email" href="mailto:vel@vel.boutique">
-                        <!--<img src="imgs/email-ico.png" style="width: 24px; height: 24px;"></img>-->Contact
-                    </a>
-                </p>
-                <p class="text-footer"><a class="w3-hover-opacity" title="Business" href="mailto:vel@vel.boutique">Business</a>
-                </p>
-                <p class="text-footer"><a class="w3-hover-opacity" href="https://vel.boutique/vel.html">Policy and more</a></p>
-            </footer>
+        <footer style="display: flex; justify-content: center;" class="w3-container w3-padding-32 w3-center">
+            <p class="text-footer">
+                <a class="w3-hover-opacity" title="Instagram" href="https://www.instagram.com/vel.boutique">
+                    <!--<img src="imgs/instagram-ico.png" style="width: 24px; height: 24px;"></img>-->Instagram
+                </a>
+            </p>
+            <p class="text-footer">
+                <a class="w3-hover-opacity" title="Email" href="mailto:vel@vel.boutique">
+                    <!--<img src="imgs/email-ico.png" style="width: 24px; height: 24px;"></img>-->Contact
+                </a>
+            </p>
+            <p class="text-footer"><a class="w3-hover-opacity" title="Business" href="mailto:vel@vel.boutique">Business</a>
+            </p>
+            <p class="text-footer"><a class="w3-hover-opacity" href="https://vel.boutique/vel.html">Policy and more</a></p>
+        </footer>
 </body>
 
 </html>
